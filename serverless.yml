@@ -1,0 +1,19 @@
+service:
+  name: service
+
+plugins:
+  - serverless-webpack
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: live
+  profile: serverless-admin
+
+functions:
+  lambda_function:
+    handler: handler.handler
+    events:
+      - http:
+          method: any
+          path: api/{proxy+}
