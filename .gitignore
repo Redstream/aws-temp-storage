@@ -12,9 +12,5 @@ jspm_packages
 # IntelliJ
 .idea
 
-# Compiled JS and compiled
-*.js
-*.js.map
-
-# Test Requests. Maybe include this in the future.
-Requests/Test
+# Logs
+*.log
